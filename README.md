@@ -11,4 +11,4 @@
 7. ionic plgin add cordova -plugin-dialogs
 8. bower install ngCordova
 9. ionic serve
-10.   /ionic-lab
+10. ionic serve --lab
