@@ -6,7 +6,7 @@
 angular.module('starter', ['ionic', 'firebase'])
 
 .factory('Items', ['$firebaseArray', function($firebaseArray){
-  var itemsRef = new Firebase('https://anothersir.firebaseio.com/items');
+  var itemsRef = new Firebase('https://xxxxxx.firebaseio.com/items');
   return $firebaseArray(itemsRef);
 }])
 
