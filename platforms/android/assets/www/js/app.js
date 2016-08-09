@@ -22,7 +22,7 @@ angular.module('starter', ['ionic', 'firebase'])
   };
 
   $scope.purchaseItem = function(item){
-    var itemRef = new Firebase('https://anothersir.firebaseio.com/items/'+item.$id);
+    var itemRef = new Firebase('https://xxxxxxxxxx.firebaseio.com/items/'+item.$id);
     itemRef.child('status').set('purchased'); 
     $ionicListDelegate.closeOptionButtons();
   }
