@@ -6,7 +6,7 @@
 angular.module('starter', ['ionic', 'firebase'])
 
 .factory('Items', ['$firebaseArray', function($firebaseArray){
-  var itemsRef = new Firebase('https://anothersir.firebaseio.com/items');
+  var itemsRef = new Firebase('https://xxxxxxxxx.firebaseio.com/items');
   return $firebaseArray(itemsRef);
 }])
 
@@ -22,7 +22,7 @@ angular.module('starter', ['ionic', 'firebase'])
   };
 
   $scope.purchaseItem = function(item){
-    var itemRef = new Firebase('https://anothersir.firebaseio.com/items/'+item.$id);
+    var itemRef = new Firebase('https://xxxxxxxxxxx.firebaseio.com/items/'+item.$id);
     itemRef.child('status').set('purchased'); 
     $ionicListDelegate.closeOptionButtons();
   }
